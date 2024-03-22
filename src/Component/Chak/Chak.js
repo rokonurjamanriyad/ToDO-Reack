@@ -4,22 +4,22 @@ const Chak = (props) => {
     return (
         <div className='mainclass'>
                    { <table>
-                <tbody>
+                <ol>
                     {
                         props.a.length !== 0?(
                             props.a.map((element,i)=>{
                                 return (
-                                   <tr>
+                                   <ol>
                                      <td>{}{element}</td>
-                                    <td><button onClick={()=>props.rem(i)}>Remove</button></td>
-                                   </tr>
+                                    <li><button onClick={()=>props.rem(i)}>Remove</button></li>
+                                   </ol>
                                 )
                             })
 
 
                         ):(<></>)
                 }
-                </tbody>
+                </ol>
             </table> }
         </div>
     );
